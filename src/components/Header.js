@@ -8,7 +8,7 @@ import { cacheResults } from '../utils/searchSlice';
 import { toggleMenu } from '../utils/appSlice';
 const Header = () => {
   const[searchQuery,setSearchQuery]=useState("");
-  cont[suggestions,setSuggestions]=useState("");
+  const[suggestions,setSuggestions]=useState("");
   const searchCache=useSelector(store=>store.search);
   useEffect(()=> {
          //Api call
@@ -40,7 +40,6 @@ const Header = () => {
 
   };
   const dispatch = useDispatch();
-
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
